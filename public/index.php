@@ -1,5 +1,5 @@
 <?php
-
+phpinfo();exit;
 include_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "bootstrap.php");
 use Crud\Controller\UsuarioController;
 
