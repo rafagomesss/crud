@@ -1,0 +1,9 @@
+{
+    "name": "gomes/crud",
+    "require": {},
+    "autoload": {
+    	"psr-4" : {
+    		"Crud\\" : "src/"
+    	}
+    }
+}
