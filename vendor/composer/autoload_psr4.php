@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Crud\\' => array($baseDir . '/src'),
+    'Classes\\' => array($vendorDir . '/Classes'),
 );

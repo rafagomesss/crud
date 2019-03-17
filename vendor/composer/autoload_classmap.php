@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Crud\\Controller\\CadastroController' => $baseDir . '/src/Controller/CadastroController.php',
     'Crud\\Controller\\IndexController' => $baseDir . '/src/Controller/IndexController.php',
     'Crud\\Controller\\UsuarioController' => $baseDir . '/src/Controller/UsuarioController.php',
     'Crud\\Model\\Usuario' => $baseDir . '/src/Model/Usuario.php',

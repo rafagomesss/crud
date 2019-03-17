@@ -1,11 +1,13 @@
 <?php
 namespace Crud\Model;
 
-class Usuario
+use Classes\Model;
+
+class Usuario extends Model
 {
-	public static function print()
+	public function cadastrar(array $dados)
 	{
-		include_once(VIEWS_PATH . 'sites/index.php');
+		return $this->inserir($dados);
 	}
 }
 

@@ -10,6 +10,7 @@ class View
 	public function __construct($view)
 	{
 		$this->view = $view;
+		require VIEWS_INCLUDES_PATH . 'header.php';
 	}
 
 	public function __set($index, $value)
@@ -24,9 +25,12 @@ class View
 
 	public function render()
 	{
-		ob_start();
-		require_once(VIEWS_PATH . $this->view);
-		return ob_get_clean();
+		require VIEWS_PATH . $this->view;
+	}
+
+	public function __destruct()
+	{
+		require VIEWS_INCLUDES_PATH . 'footer.php';
 	}
 }
 

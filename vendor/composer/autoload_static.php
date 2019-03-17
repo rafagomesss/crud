@@ -10,6 +10,7 @@ class ComposerStaticInit92f8b767f6aba00f0274110ba9f750a3
         'C' => 
         array (
             'Crud\\' => 5,
+            'Classes\\' => 8,
         ),
     );
 
@@ -18,9 +19,14 @@ class ComposerStaticInit92f8b767f6aba00f0274110ba9f750a3
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
+        'Classes\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/Classes',
+        ),
     );
 
     public static $classMap = array (
+        'Crud\\Controller\\CadastroController' => __DIR__ . '/../..' . '/src/Controller/CadastroController.php',
         'Crud\\Controller\\IndexController' => __DIR__ . '/../..' . '/src/Controller/IndexController.php',
         'Crud\\Controller\\UsuarioController' => __DIR__ . '/../..' . '/src/Controller/UsuarioController.php',
         'Crud\\Model\\Usuario' => __DIR__ . '/../..' . '/src/Model/Usuario.php',

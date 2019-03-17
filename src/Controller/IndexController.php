@@ -7,7 +7,7 @@ class IndexController
 {
 	public function index()
 	{
-		$view = new View('sites/index.php');
+		$view = new View('site/index.php');
 		return $view->render();
 	}
 }
