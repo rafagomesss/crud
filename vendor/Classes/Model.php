@@ -22,6 +22,14 @@ class Model
 		return $stmt->execute();
 	}
 
+	public function listar(): array
+	{
+		$sql = "SELECT * FROM " . $this->table;
+		$stmt = $this->conn->prepare($sql);
+		$stmt->execute();
+		return $stmt->fetchAll();
+	}
+
 	private function bind()
 	{
 

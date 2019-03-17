@@ -22,8 +22,8 @@
 								Usuário
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="Usuario/listar">Listar</a>
-								<a class="dropdown-item" href="Usuario/realizarCadastro">Cadastrar</a>
+								<a class="dropdown-item" href="/usuario/listar">Listar</a>
+								<a class="dropdown-item" href="/usuario/realizarCadastro">Cadastrar</a>
 							</div>
 						</li>
 					</ul>

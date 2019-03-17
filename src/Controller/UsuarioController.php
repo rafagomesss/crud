@@ -28,7 +28,9 @@ class UsuarioController
 
 	public function listar()
 	{
-		return (new View('site/Usuario/lista.php'))->render();
+		$view = new View('site/Usuario/lista.php');
+		$view->usuarios = (new Usuario())->listarUsuario();
+		return $view->render();
 	}
 }
 

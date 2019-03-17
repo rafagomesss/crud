@@ -11,6 +11,11 @@ class Usuario extends Model
 	{
 		return $this->inserir($dados);
 	}
+
+	public function listarUsuario()
+	{
+		return $this->listar();
+	}
 }
 
 
