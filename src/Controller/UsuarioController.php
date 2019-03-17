@@ -12,11 +12,23 @@ class UsuarioController
 		return $view->render();
 	}
 
+	public function realizarCadastro()
+	{
+		return (new View('site/Usuario/cadastro.php'))->render();
+	}
+
 	public function cadastrar()
 	{
 		$dados = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
 		$retorno = (new Usuario())->cadastrar($dados);
-		var_dump($retorno);
+		if($retorno) {
+			header("Location: /");
+		}
+	}
+
+	public function listar()
+	{
+		return (new View('site/Usuario/lista.php'))->render();
 	}
 }
 

@@ -1,5 +1,3 @@
-<?php require_once(VIEWS_PATH . 'includes/header.php'); ?>
-
 <div class="container">
 
 	<div class="jumbotron">
@@ -8,5 +6,3 @@
 	</div>
 
 </div>
-
-<?php require_once(VIEWS_PATH . 'includes/footer.php'); ?>
